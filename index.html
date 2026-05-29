@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a produção e o meio ambiente</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>O Desafio do Século XXI</h2>
+            <p>Alimentar uma população mundial em crescimento exige alta produtividade. No entanto, o verdadeiro sucesso do agro moderno está em produzir de forma inteligente, preservando o solo, a água e a biodiversidade para as próximas gerações.</p>
+        </section>
+
+        <section class="grid-praticas">
+            <div class="card-pratica">
+                <h3>Plantio Direto</h3>
+                <p>Protege o solo contra a erosão, mantém a umidade e reduz a emissão de gases poluentes.</p>
+            </div>
+            <div class="card-pratica">
+                <h3>Rotação de Culturas</h3>
+                <p>Alternar espécies de plantas na mesma área melhora os nutrientes do solo e quebra o ciclo de pragas.</p>
+            </div>
+            <div class="card-pratica">
+                <h3>Bioinsumos</h3>
+                <p>Uso de defensores naturais e microrganismos para reduzir a dependência de produtos químicos pesados.</p>
+            </div>
+        </section>
+
+        <section class="card simulador">
+            <h2>Simulador de Práticas Verdes</h2>
+            <p>Marque as práticas que você implementaria na sua propriedade para ver o nível de equilíbrio ambiental:</p>
+            
+            <form id="quiz-sustentavel">
+                <label>
+                    <input type="checkbox" id="pratica1" value="30"> Uso de energia solar na fazenda (+30)
+                </label>
+                <label>
+                    <input type="checkbox" id="pratica2" value="35"> Preservação de Áreas de Proteção Permanente - APP (+35)
+                </label>
+                <label>
+                    <input type="checkbox" id="pratica3" value="35"> Sistema de irrigação gota a gota (evita desperdício) (+35)
+                </label>
+                
+                <button type="button" onclick="calcularSustentabilidade()">Avaliar Fazenda</button>
+            </form>
+
+            <div id="resultado" class="escondido">
+                <h3>Resultado da Avaliação:</h3>
+                <p id="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Desenvolvido para o Concurso Agrinho 2026 &copy;</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
